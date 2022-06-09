@@ -1,0 +1,30 @@
+.main-nav {
+  background-color: var(--header-text-black);
+  &__ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  &__item {
+      margin-bottom: 6px;
+  }
+  &__text {
+      font-size: 12px;
+      color: var(--nav-text-gray);
+  }
+}
+
+.secondary-nav {
+    background-color: var(--bg-gray);
+    &__ul {
+        display: flex;
+        justify-content: center;
+        padding: 21px 0px;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__text {
+        font-size: 12px;
+    }
+}

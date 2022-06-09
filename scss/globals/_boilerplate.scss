@@ -18,3 +18,13 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+ul {
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px 15px;
+}
