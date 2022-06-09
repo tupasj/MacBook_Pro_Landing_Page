@@ -66,7 +66,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -84,7 +84,7 @@ li {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1;
   margin-top: 0%;
 }
@@ -139,4 +139,65 @@ a:active {
 }
 .secondary-nav__text {
   font-size: 12px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 66px;
+  padding-bottom: 159px;
+}
+.hero__content {
+  width: 980px;
+}
+.hero__heading {
+  text-align: center;
+  font-size: 80px;
+}
+.hero__images {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.hero__fig {
+  display: grid;
+  grid-template-rows: 275px repeat(5, 1fr);
+  justify-items: center;
+}
+.hero__img {
+  display: block;
+  align-self: end;
+}
+.hero__new {
+  color: #c2500c;
+  margin-top: 18px;
+}
+.hero__macbook-type {
+  font-size: 40px;
+  font-weight: 500;
+}
+.hero__placeholder {
+  display: block;
+}
+.hero__price {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+}
+.hero__btn {
+  background-color: #0071e3;
+  border-style: none;
+  border-radius: 22px;
+  padding: 5px 12px;
+}
+.hero__btn-text {
+  font-size: 17px;
+  color: #ffffff;
+}
+.hero__learn-more {
+  color: #0071e3;
+}
+.hero__availability {
+  display: block;
+  color: #909095;
 }/*# sourceMappingURL=styles.css.map */

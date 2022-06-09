@@ -1,0 +1,61 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 66px;
+  padding-bottom: 159px;
+  &__content {
+    width: 980px;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 80px;
+  }
+  &__images {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+  // Figure
+  &__fig {
+    display: grid;
+    grid-template-rows: 275px repeat(5, 1fr);
+    justify-items: center;
+  }
+  &__img {
+    display: block;
+    align-self: end;
+  }
+  &__new {
+    color: #c2500c;
+    margin-top: 18px;
+  }
+  &__macbook-type {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  &__placeholder {
+    display: block;
+  }
+  &__price {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__btn {
+    background-color: #0071e3;
+    border-style: none;
+    border-radius: 22px;
+    padding: 5px 12px;
+  }
+  &__btn-text {
+    font-size: 17px;
+    color: #ffffff;
+  }
+  &__learn-more {
+    color: #0071e3;
+  }
+  &__availability {
+    display: block;
+    color: #909095;
+  }
+}
