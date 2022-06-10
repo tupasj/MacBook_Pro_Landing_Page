@@ -153,6 +153,7 @@ a:active {
 .hero__heading {
   text-align: center;
   font-size: 80px;
+  margin-bottom: 62px;
 }
 .hero__images {
   display: flex;
@@ -163,10 +164,13 @@ a:active {
   display: grid;
   grid-template-rows: 275px repeat(5, 1fr);
   justify-items: center;
+  align-items: center;
+  gap: 12px;
 }
 .hero__img {
   display: block;
   align-self: end;
+  margin-bottom: 22px;
 }
 .hero__new {
   color: #c2500c;
@@ -188,16 +192,133 @@ a:active {
   background-color: #0071e3;
   border-style: none;
   border-radius: 22px;
-  padding: 5px 12px;
+  padding: 8px 15px;
 }
 .hero__btn-text {
   font-size: 17px;
   color: #ffffff;
 }
 .hero__learn-more {
+  margin-left: 15px;
+  font-size: 17px;
   color: #0071e3;
 }
 .hero__availability {
   display: block;
   color: #909095;
+}
+
+.mac-choices {
+  display: flex;
+  justify-content: center;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  background-color: #fafafa;
+}
+.mac-choices__content {
+  width: 915px;
+}
+.mac-choices__heading {
+  font-size: 48px;
+  text-align: center;
+}
+.mac-choices__choices-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.mac-choices .mac-choice__fig {
+  display: grid;
+  grid-template-rows: 235px repeat(6, 35px) 1px;
+  justify-items: center;
+  align-items: center;
+}
+.mac-choices .mac-choice__img {
+  display: block;
+  align-self: end;
+}
+.mac-choices .mac-choice__color-swatch, .mac-choices .mac-choice__color-swatch--light-gray, .mac-choices .mac-choice__color-swatch--dark-gray {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.mac-choices .mac-choice__color-swatch--dark-gray {
+  background-color: #7d7e80;
+}
+.mac-choices .mac-choice__color-swatch--light-gray {
+  background-color: #e3e4e6;
+}
+.mac-choices .mac-choice__new {
+  color: #c2500c;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.mac-choices .mac-choice__macbook-type {
+  font-size: 24px;
+  font-weight: 500;
+}
+.mac-choices .mac-choice__placeholder {
+  display: block;
+}
+.mac-choices .mac-choice__price {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mac-choices .mac-choice__btn {
+  background-color: #0071e3;
+  border-style: none;
+  border-radius: 22px;
+  padding: 5px 12px;
+}
+.mac-choices .mac-choice__btn-text {
+  font-size: 12px;
+  color: #ffffff;
+}
+.mac-choices .mac-choice__learn-more {
+  color: #0071e3;
+  font-size: 14px;
+}
+.mac-choices .mac-choice__divider {
+  height: 1px;
+  width: 100%;
+  background-color: #d2d2d7;
+}
+.mac-choices .mac-choice__specs-container {
+  display: grid;
+  grid-template-rows: repeat(11, 120px) 1px;
+  align-items: center;
+}
+.mac-choices .mac-choice__specs-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+.mac-choices .mac-choice__spec--main-text {
+  font-size: 21px;
+  font-weight: 600;
+}
+.mac-choices .mac-choice__spec--secondary-text {
+  font-size: 14px;
+}
+.mac-choices .mac-choice__spec--img {
+  margin-bottom: 7px;
+}
+.mac-choices__compare-and-shop {
+  display: flex;
+  justify-content: center;
+  gap: 29px;
+  margin-top: 52px;
+}
+.mac-choices__compare-and-shop a {
+  color: #0066cc;
+}
+.mac-choices__compare-and-shop a:hover {
+  text-decoration: underline;
+}
+.mac-choices__compare-and-shop span {
+  font-size: 21px;
 }/*# sourceMappingURL=styles.css.map */
