@@ -321,4 +321,117 @@ a:active {
 }
 .mac-choices__compare-and-shop span {
   font-size: 21px;
+}
+
+.ads-main {
+  display: grid;
+}
+.ads-main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  width: 1250px;
+  justify-self: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.ads-main__ad, .ads-main__ad--education, .ads-main__ad--work, .ads-main__ad--trade, .ads-main__ad--accessories {
+  background-size: 675px 650px;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+.ads-main__ad--accessories {
+  background-image: url("../../assets/images/mac-accessories.png");
+}
+.ads-main__ad--trade {
+  background-image: url("../../assets/images/macbook-pro.png");
+}
+.ads-main__ad--work {
+  background-image: url("../../assets/images/apple-at-work.png");
+}
+.ads-main__ad--education {
+  background-image: url("../../assets/images/apple-and-education.png");
+}
+.ads-main__ad--h-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  margin-top: 62px;
+  padding-left: 62px;
+  padding-right: 62px;
+  text-align: center;
+}
+.ads-main__ad--center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+.ads-main__text {
+  line-height: 1.5;
+}
+.ads-main__text--medium {
+  font-size: 24px;
+}
+.ads-main__text--large {
+  font-size: 48px;
+  font-weight: 600;
+}
+.ads-main__text--link {
+  color: #0066cc;
+}
+.ads-main__text--link:hover {
+  text-decoration: underline;
+}
+.ads-main__text--white {
+  color: #ffffff;
+}
+.ads-main__btn {
+  background-color: #0071e3;
+  border-style: none;
+  border-radius: 17px;
+  border-radius: 3em;
+  padding: 0.75em 1.25em;
+}
+.ads-main__anchor {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.ads-secondary {
+  display: grid;
+}
+.ads-secondary__container {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 32px;
+  margin-bottom: 102px;
+  width: 1250px;
+}
+.ads-secondary__ad, .ads-secondary__ad--learn-more, .ads-secondary__ad--text, .ads-secondary__ad--heading, .ads-secondary__ad--img {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+.ads-secondary__ad--delivery, .ads-secondary__ad--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ads-secondary__ad--heading {
+  font-weight: bold;
+}
+.ads-secondary__ad--learn-more {
+  color: #0066cc;
+}
+.ads-secondary__ad--learn-more:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
