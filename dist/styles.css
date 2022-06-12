@@ -425,6 +425,8 @@ a:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0px 125px;
+  text-align: center;
 }
 .ads-secondary__ad--heading {
   font-weight: bold;
@@ -433,5 +435,62 @@ a:active {
   color: #0066cc;
 }
 .ads-secondary__ad--learn-more:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f5f5f7;
+}
+
+.footer-info__content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 22px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #89898e;
+}
+.footer-info__paragraph {
+  margin-bottom: 12px;
+}
+.footer-info__item {
+  display: list-item;
+  list-style-type: decimal;
+  margin-bottom: 12px;
+}
+.footer-info__divider {
+  height: 1px;
+  background-color: #d2d2d7;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 980px;
+  font-size: 12px;
+}
+.footer-nav__column {
+  text-align: left;
+}
+.footer-nav__heading {
+  font-weight: 600;
+}
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.footer-nav__item {
+  margin: 0;
+  margin-bottom: 12px;
+}
+.footer-nav__item a {
+  color: #4a4a4d;
+}
+.footer-nav__item a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */

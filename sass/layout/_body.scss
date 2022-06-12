@@ -296,6 +296,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 0px 125px;
+      text-align: center;
     }
     &--card {
       @extend .ads-secondary__ad--delivery;
