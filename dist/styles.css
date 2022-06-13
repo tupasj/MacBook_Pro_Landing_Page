@@ -148,7 +148,8 @@ a:active {
   padding-bottom: 159px;
 }
 .hero__content {
-  width: 980px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 .hero__heading {
   text-align: center;
@@ -171,6 +172,8 @@ a:active {
   display: block;
   align-self: end;
   margin-bottom: 22px;
+  width: 100%;
+  height: auto;
 }
 .hero__new {
   color: #c2500c;
@@ -216,7 +219,8 @@ a:active {
   background-color: #fafafa;
 }
 .mac-choices__content {
-  width: 915px;
+  max-width: 915px;
+  margin: 0 auto;
 }
 .mac-choices__heading {
   font-size: 48px;
@@ -297,6 +301,9 @@ a:active {
   align-items: center;
   line-height: 1.5;
 }
+.mac-choices .mac-choice__spec, .mac-choices .mac-choice__spec--img, .mac-choices .mac-choice__spec--secondary-text, .mac-choices .mac-choice__spec--main-text {
+  text-align: center;
+}
 .mac-choices .mac-choice__spec--main-text {
   font-size: 21px;
   font-weight: 600;
@@ -331,10 +338,10 @@ a:active {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 25px;
-  width: 1250px;
+  max-width: 1250px;
   justify-self: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 25px;
+  margin: 0 auto;
 }
 .ads-main__ad, .ads-main__ad--education, .ads-main__ad--work, .ads-main__ad--trade, .ads-main__ad--accessories {
   background-size: 675px 650px;
@@ -412,7 +419,7 @@ a:active {
   gap: 25px;
   margin-top: 32px;
   margin-bottom: 102px;
-  width: 1250px;
+  max-width: 1250px;
 }
 .ads-secondary__ad, .ads-secondary__ad--learn-more, .ads-secondary__ad--text, .ads-secondary__ad--heading, .ads-secondary__ad--img {
   display: block;
@@ -438,6 +445,34 @@ a:active {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 1068px) {
+  .hero {
+    padding-bottom: 81px;
+  }
+  .hero__content {
+    max-width: 692px;
+  }
+  .hero__heading {
+    margin-bottom: 0;
+    font-size: 64px;
+  }
+  .hero__fig {
+    grid-template-rows: 250px repeat(5, 1fr);
+  }
+  .hero__macbook-type {
+    font-size: 28px;
+  }
+  .hero__price {
+    font-size: 21px;
+  }
+
+  .mac-choices__content {
+    max-width: 677px;
+  }
+  .mac-choices .mac-choice__img {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #f5f5f7;
 }
