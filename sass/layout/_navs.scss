@@ -1,30 +1,66 @@
 .main-nav {
   background-color: var(--header-text-black);
   &__ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__menu-icon {
+    display: none;
   }
   &__item {
-      margin-bottom: 6px;
+    margin-bottom: 6px;
   }
   &__text {
-      font-size: 12px;
-      color: var(--nav-text-gray);
+    font-size: 12px;
+    color: var(--nav-text-gray);
   }
 }
 
 .secondary-nav {
-    background-color: var(--bg-gray);
+  background-color: var(--bg-gray);
+  &__ul {
+    display: flex;
+    justify-content: center;
+    padding: 21px 0px;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__text {
+    font-size: 12px;
+  }
+}
+
+//Medium
+@media only screen and (max-width: 1068px) {
+  .main-nav {
     &__ul {
-        display: flex;
-        justify-content: center;
-        padding: 21px 0px;
+      display: grid;
+    }
+    &__menu-icon {
+      display: inline;
+      position: absolute;
+    }
+    &__apple-logo {
+      justify-self: center;
     }
     &__item {
-        text-align: center;
+      display: none;
     }
-    &__text {
-        font-size: 12px;
+    &__magnifying-glass {
+      display: none;
     }
+    &__shopping-bag {
+      display: none;
+    }
+  }
+  .secondary-nav {
+      &__ul {
+        display: grid;
+        grid-template-columns: repeat(6, 150px);
+        overflow-x: scroll;
+        justify-content: start;
+      }
+  }
 }

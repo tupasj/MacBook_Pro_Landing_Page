@@ -360,3 +360,101 @@
     }
   }
 }
+
+//Small
+@media only screen and (max-width: 734px) {
+  .hero {
+    padding-bottom: 50px;
+    &__content {
+      max-width: 510px;
+    }
+    &__heading {
+      font-size: 48px;
+      margin-bottom: 48px;
+    }
+    &__images {
+      flex-direction: column;
+      gap: 0;
+    }
+    &__img {
+      margin-bottom: 0;
+      padding-bottom: 22px;
+      width: 235px;
+      height: auto;
+    }
+    &__placeholder {
+      display: none;
+    }
+    &__fig {
+      grid-template-rows: 175px repeat(5, 1fr);
+      gap: 0;
+    }
+  }
+  .mac-choices {
+    &__content {
+      max-width: 510px;
+    }
+    &__heading {
+      margin-bottom: 35px;
+      font-size: 32px;
+    }
+    &__choices-container {
+      flex-wrap: wrap;
+      justify-content: start;
+      min-width: 635px;
+    }
+    .mac-choice {
+      &__specs-container {
+        grid-template-rows: repeat(11, 105px) 1px;
+      }
+      &__fig {
+        grid-template-rows: 175px repeat(6, 35px) 1px;
+      }
+    }
+  }
+  .ads-main {
+    display: block;
+    &__container {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
+    }
+    &__ad {
+      background-size: 100% 465px;
+      height: 465px;
+      width: 100%;
+      margin: 0 auto;
+      &--h-center {
+        margin: 0 auto;
+        margin-top: 22px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 275px;
+      }
+    }
+    &__text {
+      &--large {
+        font-size: 32px;
+        font-weight: 600;
+      }
+    }
+  }
+  .ads-secondary {
+    display: block;
+    &__container {
+      display: block;
+    }
+    &__ad {
+      --delivery {
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+      --card {
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+    }
+  }
+}

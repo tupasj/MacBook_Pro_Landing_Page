@@ -1,0 +1,37 @@
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    margin-top: 48px;
+    height: 100vh;
+    width: 100%;
+    background-color: #1d1d1f;
+    &__divider {
+      display: block;
+      height: 1px;
+      background-color: #424245;
+      &--partial-width {
+        @extend .mobile-menu__divider;
+        margin: 0 auto;
+        width: 85%;
+      }
+    }
+    li {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    a {
+      font-size: 17px;
+      margin-left: 40px;
+      color: #cccccc;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  
