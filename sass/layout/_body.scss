@@ -215,19 +215,19 @@
     height: 650px;
     &--accessories {
       @extend .ads-main__ad;
-      background-image: url("../../assets/images/mac-accessories.png");
+      background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/mac-accessories.png");
     }
     &--trade {
       @extend .ads-main__ad;
-      background-image: url("../../assets/images/macbook-pro.png");
+      background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/macbook-pro.png");
     }
     &--work {
       @extend .ads-main__ad;
-      background-image: url("../../assets/images/apple-at-work.png");
+      background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/apple-at-work.png");
     }
     &--education {
       @extend .ads-main__ad;
-      background-image: url("../../assets/images/apple-and-education.png");
+      background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/apple-and-education.png");
     }
     &--h-center {
       display: flex;

@@ -422,16 +422,16 @@ a:active {
   height: 650px;
 }
 .ads-main__ad--accessories {
-  background-image: url("../../assets/images/mac-accessories.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/mac-accessories.png");
 }
 .ads-main__ad--trade {
-  background-image: url("../../assets/images/macbook-pro.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/macbook-pro.png");
 }
 .ads-main__ad--work {
-  background-image: url("../../assets/images/apple-at-work.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/apple-at-work.png");
 }
 .ads-main__ad--education {
-  background-image: url("../../assets/images/apple-and-education.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/apple-and-education.png");
 }
 .ads-main__ad--h-center {
   display: flex;
