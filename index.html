@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/15a9e07c9b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -39,15 +43,16 @@
         <li><a href="#">Support</a></li>
       </ul>
     </nav>
+    
     <nav class="main-nav">
       <ul class="main-nav__ul">
         <li class="main-nav__menu-icon">
-          <a href="#"><img src="assets/icons/menu-icon.png" alt="menu icon"></a>
-        </li>
-        <li class="main-nav__apple-logo">
           <a href="#"
-            ><img src="assets/icons/apple-icon-gray.png" alt="apple icon gray"
+            ><img src="assets/icons/menu-icon.png" alt="menu icon"
           /></a>
+        </li>
+        <li class="main-nav__icon">
+          <a href="#"><i class="fa-solid fa-apple-whole"></i></a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__text" href="#">Store</a>
@@ -79,19 +84,11 @@
         <li class="main-nav__item">
           <a class="main-nav__text" href="#">Support</a>
         </li>
-        <li class="main-nav__magnifying-glass">
-          <a class="main-nav__text" href="#"
-            ><img
-              src="assets/icons/magnifying-glass-icon.png"
-              alt="magnifying glass icon"
-          /></a>
+        <li class="main-nav__icon">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </li>
-        <li class="main-nav__shopping-bag">
-          <a class="main-nav__text" href="#"
-            ><img
-              src="assets/icons/shopping-bag-gray-icon.png"
-              alt="shopping bag gray icon"
-          /></a>
+        <li class="main-nav__icon">
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
         </li>
       </ul>
     </nav>
@@ -99,40 +96,30 @@
     <nav class="secondary-nav">
       <ul class="secondary-nav__ul">
         <li class="secondary-nav__item">
-          <img
-            src="assets/icons/laptop-single-icon.png"
-            alt="laptop single icon"
-          />
-          <p class="secondary-nav__text">MacBook Pro 13"</p>
+          <i class="fa-solid fa-laptop icon--large"></i>
+          <a href="#"><p class="secondary-nav__text">MacBook Pro 13"</p></a>
         </li>
         <li class="secondary-nav__item">
-          <img
-            src="assets/icons/laptop-double-icon.png"
-            alt="laptop double icon"
-          />
-          <p class="secondary-nav__text">MacBook Pro 14" and 16"</p>
+          <i class="fa-solid fa-laptop icon--large"></i>
+          <a href="#"
+            ><p class="secondary-nav__text">MacBook Pro 14" and 16"</p></a
+          >
         </li>
         <li class="secondary-nav__item">
-          <img
-            src="assets/icons/phone-double-icon.png"
-            alt="phone double icon"
-          />
-          <p class="secondary-nav__text">Compare</p>
+          <i class="fa-solid fa-mobile-screen icon--large"></i>
+          <a href="#"><p class="secondary-nav__text">Compare</p></a>
         </li>
         <li class="secondary-nav__item">
-          <img
-            src="assets/icons/computer-double-icon.png"
-            alt="computer double icon"
-          />
-          <p class="secondary-nav__text">Displays</p>
+          <i class="fa-solid fa-display icon--large"></i>
+          <a href="#"><p class="secondary-nav__text">Displays</p></a>
         </li>
         <li class="secondary-nav__item">
-          <img src="assets/icons/headphones-icon.png" alt="headphones icon" />
-          <p class="secondary-nav__text">Accessories</p>
+          <i class="fa-solid fa-headphones-simple icon--large"></i>
+          <a href="#"><p class="secondary-nav__text">Accessories</p></a>
         </li>
         <li class="secondary-nav__item">
-          <img src="assets/icons/mac-os-icon.png" alt="monterey os icon" />
-          <p class="secondary-nav__text">Monterey</p>
+          <i class="fa-solid fa-computer icon--large"></i>
+          <a href="#"><p class="secondary-nav__text">Monterey</p></a>
         </li>
       </ul>
     </nav>
@@ -145,7 +132,7 @@
             <figure class="hero__fig">
               <img
                 class="hero__img"
-                src="assets/images/macbook-pro-13-inch-hero.png"
+                src="assets/images/macbook-pro-hero.png"
                 alt="macbook pro 13 inch"
               />
               <span class="hero__new">New</span>
@@ -162,7 +149,7 @@
             <figure class="hero__fig">
               <img
                 class="hero__img"
-                src="assets/images/macbook-pro-14-and-16-inch-hero.png"
+                src="assets/images/macbook-pro-hero.png"
                 alt="macbook pro 14 and 16 inch"
               />
               <span class="hero__placeholder"></span>
@@ -186,7 +173,7 @@
               <figure class="mac-choice__fig">
                 <img
                   class="mac-choice__img"
-                  src="assets/images/macbook-pro-13-inch.png"
+                  src="assets/images/macbook-pro-mac-choices.png"
                   alt="macbook pro 13 inch"
                 />
                 <div class="mac-choice__color-swatches">
@@ -212,7 +199,7 @@
                 <div class="mac-choice__specs-group">
                   <img
                     class="mac-choice__spec--img"
-                    src="assets/icons/m2-chip-icon.png"
+                    src="assets/icons/chip-icon.png"
                     alt="apple m2 chip icon"
                   />
                   <span class="mac-choice__spec--secondary-text"
@@ -228,11 +215,7 @@
                   <span class="mac-choice__spec--secondary-text">GPU</span>
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/unified-memory-icon.png"
-                    alt="unified memory icon"
-                  />
+                  <i class="fa-solid fa-memory icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Up to 24GB unified memory</span
                   >
@@ -244,27 +227,19 @@
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img src="assets/icons/battery-icon.png" alt="battery icon" />
+                  <i class="fa-solid fa-battery-full icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Up to 20 hours battery life</span
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/camera-icon.png"
-                    alt="camera icon"
-                  />
+                  <i class="fa-solid fa-video icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >720p FaceTime HD camera</span
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/speaker-icon.png"
-                    alt="speaker icon"
-                  />
+                  <i class="fa-solid fa-volume-high icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Studio quality three-mic array</span
                   >
@@ -277,11 +252,7 @@
                   <span class="mac-choice__spec--secondary-text">Weight</span>
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/fingerprint-framed-icon.png"
-                    alt="fingerprint framed icon"
-                  />
+                  <i class="fa-solid fa-fingerprint icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Touch Bar and Touch ID</span
                   >
@@ -293,7 +264,7 @@
               <figure class="mac-choice__fig">
                 <img
                   class="mac-choice__img"
-                  src="assets/images/macbook-pro-14-inch.png"
+                  src="assets/images/macbook-pro-mac-choices.png"
                   alt="macbook pro 14 inch"
                 />
                 <div class="mac-choice__color-swatches">
@@ -319,7 +290,7 @@
                 <div class="mac-choice__specs-group">
                   <img
                     class="mac-choice__spec--img"
-                    src="assets/icons/m2-chip-icon.png"
+                    src="assets/icons/chip-icon.png"
                     alt="apple m2 chip icon"
                   />
                   <span class="mac-choice__spec--secondary-text"
@@ -337,11 +308,7 @@
                   <span class="mac-choice__spec--secondary-text">GPU</span>
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/unified-memory-icon.png"
-                    alt="unified memory icon"
-                  />
+                  <i class="fa-solid fa-memory icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Up to 64GB unified memory</span
                   >
@@ -353,31 +320,19 @@
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/battery-icon.png"
-                    alt="battery icon"
-                  />
+                  <i class="fa-solid fa-battery-full icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Up to 17 hours battery life</span
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/camera-icon.png"
-                    alt="camera icon"
-                  />
+                  <i class="fa-solid fa-video icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >1080p FaceTime HD camera</span
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/speaker-icon.png"
-                    alt="speaker icon"
-                  />
+                  <i class="fa-solid fa-volume-high icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Studio quality three-mic array</span
                   >
@@ -390,11 +345,7 @@
                   <span class="mac-choice__spec--secondary-text">Weight</span>
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/fingerprint-icon.png"
-                    alt="fingerprint framed icon"
-                  />
+                  <i class="fa-solid fa-fingerprint icon--large"></i>
                   <span class="mac-choice__spec--secondary-text">Touch ID</span>
                 </div>
                 <div class="mac-choice__divider"></div>
@@ -404,7 +355,7 @@
               <figure class="mac-choice__fig">
                 <img
                   class="mac-choice__img"
-                  src="assets/images/macbook-pro-16-inch.png"
+                  src="assets/images/macbook-pro-mac-choices.png"
                   alt="macbook pro 16 inch"
                 />
                 <div class="mac-choice__color-swatches">
@@ -430,7 +381,7 @@
                 <div class="mac-choice__specs-group">
                   <img
                     class="mac-choice__spec--img"
-                    src="assets/icons/m2-chip-icon.png"
+                    src="assets/icons/chip-icon.png"
                     alt="apple m2 chip icon"
                   />
                   <span class="mac-choice__spec--secondary-text"
@@ -446,11 +397,7 @@
                   <span class="mac-choice__spec--secondary-text">GPU</span>
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/unified-memory-icon.png"
-                    alt="unified memory icon"
-                  />
+                  <i class="fa-solid fa-memory icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Up to 64GB unified memory</span
                   >
@@ -462,27 +409,19 @@
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/battery-icon.png"
-                    alt="battery icon"
-                  />
+                  <i class="fa-solid fa-battery-full icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Up to 21 hours battery life</span
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/camera-icon.png"
-                    alt="camera icon"
-                  />
+                  <i class="fa-solid fa-video icon--large icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >1080p FaceTime HD camera</span
                   >
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img src="assets/icons/speaker-icon.png" alt="speaker icon" />
+                  <i class="fa-solid fa-volume-high icon--large"></i>
                   <span class="mac-choice__spec--secondary-text"
                     >Studio quality three-mic array</span
                   >
@@ -495,11 +434,7 @@
                   <span class="mac-choice__spec--secondary-text">Weight</span>
                 </div>
                 <div class="mac-choice__specs-group">
-                  <img
-                    class="mac-choice__spec--img"
-                    src="assets/icons/fingerprint-icon.png"
-                    alt="fingerprint framed icon"
-                  />
+                  <i class="fa-solid fa-fingerprint icon--large"></i>
                   <span class="mac-choice__spec--secondary-text">Touch ID</span>
                 </div>
                 <div class="mac-choice__divider"></div>
@@ -575,11 +510,7 @@
       <section class="ads-secondary">
         <div class="ads-secondary__container">
           <div class="ads-secondary__ad--delivery">
-            <img
-              class="ads-secondary__ad--img"
-              src="assets/icons/delivery-box-icon.png"
-              alt="delivery box"
-            />
+            <i class="fa-solid fa-box icon--large"></i>
             <span class="ads-secondary__ad--heading">Free delivery</span>
             <span class="ads-secondary__ad--text"
               >And free returns. See checkout for delivery dates.</span
@@ -587,11 +518,7 @@
             <a class="ads-secondary__ad--learn-more" href="#">Learn more ></a>
           </div>
           <div class="ads-secondary__ad--card">
-            <img
-              class="ads-secondary__ad--img"
-              src="assets/icons/dollar-icon.png"
-              alt="dollar sign"
-            />
+            <i class="fa-solid fa-file-invoice-dollar icon--large"></i>
             <span class="ads-secondary__ad--heading"
               >Find the card for you</span
             >

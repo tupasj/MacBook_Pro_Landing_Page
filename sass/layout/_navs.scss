@@ -4,9 +4,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4px;
+    height: 44px;
   }
   &__menu-icon {
     display: none;
+  }
+  &__icon {
+    padding-bottom: 4px;
+  }
+  &__icon > a {
+    &:link {
+      color: var(--nav-text-gray);
+    }
+    &:visited {
+      color: var(--nav-text-gray);
+    }
+    &:hover {
+      color: #ffffff;
+    }
   }
   &__item {
     margin-bottom: 6px;
@@ -14,6 +30,9 @@
   &__text {
     font-size: 12px;
     color: var(--nav-text-gray);
+    &:hover {
+      color: #ffffff;
+    }
   }
 }
 
@@ -25,10 +44,21 @@
     padding: 21px 0px;
   }
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item > a {
+    color: #000000;
     text-align: center;
+    &:hover {
+      color: #3384d5;
+    }
   }
   &__text {
     font-size: 12px;
+    width: 84px;
   }
 }
 
@@ -56,11 +86,11 @@
     }
   }
   .secondary-nav {
-      &__ul {
-        display: grid;
-        grid-template-columns: repeat(6, 150px);
-        overflow-x: scroll;
-        justify-content: start;
-      }
+    &__ul {
+      display: grid;
+      grid-template-columns: repeat(6, 150px);
+      overflow-x: scroll;
+      justify-content: start;
+    }
   }
 }
