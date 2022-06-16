@@ -420,6 +420,7 @@ a:active {
   background-size: 675px 650px;
   background-repeat: no-repeat;
   height: 650px;
+  text-align: center;
 }
 .ads-main__ad--accessories {
   background-image: url("https://cdn.jsdelivr.net/gh/tupasj/MacBook_Pro_Landing_Page/assets/images/mac-accessories.png");
