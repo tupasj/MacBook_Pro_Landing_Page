@@ -1,0 +1,10 @@
+.btn {
+    background-color: var(--btn-blue);
+    border-style: none;
+    border-radius: 22px;
+    padding: 8px 15px;
+    &--medium {
+        @extend .btn;
+        padding: 5px 12px;
+    }
+}

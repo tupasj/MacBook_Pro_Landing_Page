@@ -21,17 +21,17 @@
       color: var(--nav-text-gray);
     }
     &:hover {
-      color: #ffffff;
+      color: var(--white);
     }
   }
   &__item {
     margin-bottom: 6px;
   }
   &__text {
-    font-size: 12px;
+    font-size: .75rem;
     color: var(--nav-text-gray);
     &:hover {
-      color: #ffffff;
+      color: var(--white);
     }
   }
 }
@@ -50,14 +50,14 @@
     align-items: center;
   }
   &__item > a {
-    color: #000000;
+    color: var(--black);
     text-align: center;
     &:hover {
-      color: #3384d5;
+      color: var(--blue-hover);
     }
   }
   &__text {
-    font-size: 12px;
+    font-size: .75rem;
     width: 84px;
   }
 }

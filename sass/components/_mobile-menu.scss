@@ -9,11 +9,11 @@
     margin-top: 42px;
     height: 100vh;
     width: 100%;
-    background-color: #1d1d1f;
+    background-color: var(--black-lighter);
     &__divider {
       display: block;
       height: 1px;
-      background-color: #424245;
+      background-color: var(--black-divider);
       &--partial-width {
         @extend .mobile-menu__divider;
         margin: 0 auto;
@@ -28,9 +28,9 @@
     a {
       font-size: 17px;
       margin-left: 40px;
-      color: #cccccc;
+      color: var(--gray-text-mobile-menu);
       &:hover {
-        color: #ffffff;
+        color: var(--white);
       }
     }
   }

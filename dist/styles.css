@@ -101,13 +101,27 @@ a:active {
 
 :root {
   --anchor-text-blue: #3485d6;
+  --black: #000000;
+  --black-divider: #424245;
+  --black-lighter: #1d1d1f;
   --bg-gray: #f8f8f9;
   --bg-white: #ffffff;
   --btn-blue: #0071e3;
+  --blue-hover: #3384d5;
+  --blue-link-text: #0071e3;
   --header-text-black: #1d1d1f;
+  --gray-divider: #d2d2d7;
+  --gray-footer-text: #89898e;
+  --gray-text-availability: #909095;
+  --gray-text-mobile-menu: #cccccc;
   --nav-black: #141414;
   --nav-text-gray: #a1a1a1;
+  --red: #c2500c;
+  --swatch-gray: #7d7e80;
+  --swatch-white: #e3e4e6;
   --text-dark-gray: #4a4a4d;
+  --white: #ffffff;
+  --white-tinted: #fafafa;
 }
 
 .main-nav {
@@ -133,17 +147,17 @@ a:active {
   color: var(--nav-text-gray);
 }
 .main-nav__icon > a:hover {
-  color: #ffffff;
+  color: var(--white);
 }
 .main-nav__item {
   margin-bottom: 6px;
 }
 .main-nav__text {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--nav-text-gray);
 }
 .main-nav__text:hover {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .secondary-nav {
@@ -161,14 +175,14 @@ a:active {
   align-items: center;
 }
 .secondary-nav__item > a {
-  color: #000000;
+  color: var(--black);
   text-align: center;
 }
 .secondary-nav__item > a:hover {
-  color: #3384d5;
+  color: var(--blue-hover);
 }
 .secondary-nav__text {
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 84px;
 }
 
@@ -212,7 +226,7 @@ a:active {
 }
 .hero__heading {
   text-align: center;
-  font-size: 80px;
+  font-size: 5rem;
   margin-bottom: 62px;
 }
 .hero__images {
@@ -235,11 +249,11 @@ a:active {
   height: auto;
 }
 .hero__new {
-  color: #c2500c;
+  color: var(--red);
   margin-top: 18px;
 }
 .hero__macbook-type {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 .hero__placeholder {
@@ -247,27 +261,27 @@ a:active {
 }
 .hero__price {
   display: block;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .hero__btn {
-  background-color: #0071e3;
+  background-color: var(--btn-blue);
   border-style: none;
   border-radius: 22px;
   padding: 8px 15px;
 }
 .hero__btn-text {
-  font-size: 17px;
-  color: #ffffff;
+  font-size: 1.0625rem;
+  color: var(--white);
 }
 .hero__learn-more {
   margin-left: 15px;
-  font-size: 17px;
-  color: #0071e3;
+  font-size: 1.0625rem;
+  color: var(--blue-link-text);
 }
 .hero__availability {
   display: block;
-  color: #909095;
+  color: var(--gray-text-availability);
 }
 
 .mac-choices {
@@ -275,14 +289,14 @@ a:active {
   justify-content: center;
   padding-top: 102px;
   padding-bottom: 102px;
-  background-color: #fafafa;
+  background-color: var(--white-tinted);
 }
 .mac-choices__content {
   max-width: 915px;
   margin: 0 auto;
 }
 .mac-choices__heading {
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
 }
 .mac-choices__choices-container {
@@ -308,18 +322,18 @@ a:active {
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .mac-choices .mac-choice__color-swatch--dark-gray {
-  background-color: #7d7e80;
+  background-color: var(--swatch-gray);
 }
 .mac-choices .mac-choice__color-swatch--light-gray {
-  background-color: #e3e4e6;
+  background-color: var(--swatch-white);
 }
 .mac-choices .mac-choice__new {
   color: #c2500c;
   margin-top: 18px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .mac-choices .mac-choice__macbook-type {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .mac-choices .mac-choice__placeholder {
@@ -327,27 +341,27 @@ a:active {
 }
 .mac-choices .mac-choice__price {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 .mac-choices .mac-choice__btn {
-  background-color: #0071e3;
+  background-color: var(--btn-blue);
   border-style: none;
   border-radius: 22px;
   padding: 5px 12px;
 }
 .mac-choices .mac-choice__btn-text {
-  font-size: 12px;
-  color: #ffffff;
+  font-size: 0.75rem;
+  color: var(--white);
 }
 .mac-choices .mac-choice__learn-more {
   color: #0071e3;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .mac-choices .mac-choice__divider {
   height: 1px;
   width: 100%;
-  background-color: #d2d2d7;
+  background-color: var(--gray-divider);
 }
 .mac-choices .mac-choice__specs-container {
   display: grid;
@@ -364,11 +378,11 @@ a:active {
   text-align: center;
 }
 .mac-choices .mac-choice__spec--main-text {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 600;
 }
 .mac-choices .mac-choice__spec--secondary-text {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .mac-choices .mac-choice__spec--img {
   margin-bottom: 7px;
@@ -380,13 +394,13 @@ a:active {
   margin-top: 52px;
 }
 .mac-choices__compare-and-shop a {
-  color: #0066cc;
+  color: var(--blue-link-text);
 }
 .mac-choices__compare-and-shop a:hover {
   text-decoration: underline;
 }
 .mac-choices__compare-and-shop span {
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .ads-main {
@@ -441,31 +455,31 @@ a:active {
   line-height: 1.5;
 }
 .ads-main__text--medium {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .ads-main__text--large {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .ads-main__text--link {
-  color: #0066cc;
+  color: var(--blue-link-text);
 }
 .ads-main__text--link:hover {
   text-decoration: underline;
 }
 .ads-main__text--white {
-  color: #ffffff;
+  color: var(--white);
 }
 .ads-main__btn {
-  background-color: #0071e3;
+  background-color: var(--blue-link-text);
   border-style: none;
   border-radius: 17px;
   border-radius: 3em;
   padding: 0.75em 1.25em;
 }
 .ads-main__anchor {
-  font-size: 17px;
-  color: #ffffff;
+  font-size: 1.0625rem;
+  color: var(--white);
 }
 
 .ads-secondary {
@@ -484,7 +498,7 @@ a:active {
   display: block;
   margin-top: 12px;
   margin-bottom: 12px;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 .ads-secondary__ad--delivery, .ads-secondary__ad--card {
   display: flex;
@@ -498,7 +512,7 @@ a:active {
   font-weight: bold;
 }
 .ads-secondary__ad--learn-more {
-  color: #0066cc;
+  color: var(--blue-link-text);
 }
 .ads-secondary__ad--learn-more:hover {
   text-decoration: underline;
@@ -513,16 +527,16 @@ a:active {
   }
   .hero__heading {
     margin-bottom: 0;
-    font-size: 64px;
+    font-size: 4rem;
   }
   .hero__fig {
     grid-template-rows: 250px repeat(5, 1fr);
   }
   .hero__macbook-type {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .hero__price {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 
   .mac-choices__content {
@@ -540,7 +554,7 @@ a:active {
     max-width: 510px;
   }
   .hero__heading {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 48px;
   }
   .hero__images {
@@ -566,7 +580,7 @@ a:active {
   }
   .mac-choices__heading {
     margin-bottom: 35px;
-    font-size: 32px;
+    font-size: 2rem;
   }
   .mac-choices__choices-container {
     flex-wrap: wrap;
@@ -604,7 +618,7 @@ a:active {
     width: 275px;
   }
   .ads-main__text--large {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -625,16 +639,16 @@ a:active {
   }
 }
 .footer {
-  background-color: #f5f5f7;
+  background-color: var(--white-tinted);
 }
 
 .footer-info__content {
   max-width: 980px;
   margin: 0 auto;
   padding: 22px;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.25;
-  color: #89898e;
+  color: var(--gray-footer-text);
 }
 .footer-info__paragraph {
   margin-bottom: 12px;
@@ -646,7 +660,7 @@ a:active {
 }
 .footer-info__divider {
   height: 1px;
-  background-color: #d2d2d7;
+  background-color: var(--gray-divider);
 }
 
 .footer-nav {
@@ -656,7 +670,7 @@ a:active {
   margin: 0 auto;
   padding: 0 22px;
   max-width: 980px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .footer-nav__column {
   text-align: left;
@@ -675,7 +689,7 @@ a:active {
   margin-bottom: 12px;
 }
 .footer-nav__item a {
-  color: #4a4a4d;
+  color: var(--text-dark-gray);
 }
 .footer-nav__item a:hover {
   text-decoration: underline;
@@ -692,12 +706,12 @@ a:active {
   margin-top: 42px;
   height: 100vh;
   width: 100%;
-  background-color: #1d1d1f;
+  background-color: var(--black-lighter);
 }
 .mobile-menu__divider, .mobile-menu__divider--partial-width {
   display: block;
   height: 1px;
-  background-color: #424245;
+  background-color: var(--black-divider);
 }
 .mobile-menu__divider--partial-width {
   margin: 0 auto;
@@ -711,10 +725,10 @@ a:active {
 .mobile-menu a {
   font-size: 17px;
   margin-left: 40px;
-  color: #cccccc;
+  color: var(--gray-text-mobile-menu);
 }
 .mobile-menu a:hover {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .icon--large {
@@ -734,4 +748,13 @@ a:active {
   .fa-bag-shopping {
     display: none !important;
   }
+}
+.btn, .btn--medium {
+  background-color: var(--btn-blue);
+  border-style: none;
+  border-radius: 22px;
+  padding: 8px 15px;
+}
+.btn--medium {
+  padding: 5px 12px;
 }/*# sourceMappingURL=styles.css.map */
